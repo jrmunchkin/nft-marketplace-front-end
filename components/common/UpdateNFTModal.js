@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Modal, Input, useNotification } from "web3uikit";
 import { useWeb3Contract } from "react-moralis";
 import { ethers } from "ethers";
-import nftMarketplace from "../../constants/NftMarketplace.json";
+import nftMarketplace from "../../constants/nftMarketplace.json";
 
 export default function UpdateNFTModal({
   nftAddress,

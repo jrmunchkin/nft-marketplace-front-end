@@ -4,7 +4,7 @@ import { useWeb3Contract } from "react-moralis";
 import { ethers } from "ethers";
 import { useBetween } from "use-between";
 import { useMarketplace } from "../../hooks/useMarketplace";
-import nftMarketplace from "../../constants/NftMarketplace.json";
+import nftMarketplace from "../../constants/nftMarketplace.json";
 import erc721Abi from "../../constants/erc721.json";
 
 export default function ListNFTModal({

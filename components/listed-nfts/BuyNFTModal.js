@@ -2,7 +2,7 @@ import { Modal, useNotification } from "web3uikit";
 import { useWeb3Contract } from "react-moralis";
 import { useBetween } from "use-between";
 import { useMarketplace } from "../../hooks/useMarketplace";
-import nftMarketplace from "../../constants/NftMarketplace.json";
+import nftMarketplace from "../../constants/nftMarketplace.json";
 
 export default function BuyNFTModal({
   nftAddress,

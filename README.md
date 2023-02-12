@@ -5,7 +5,7 @@
 ![App](public/images/readme-app-2.png)
 
 This is a repository to give a user interface on the NFT Marketplace contracts.
-This repository is the frontend repository of the [NFT Marketplace contracts](https://github.com/jrchain/nft-marketplace). However you absolutly can use this repository without the backend part.
+This repository is the frontend repository of the [NFT Marketplace contracts](https://github.com/jrmunchkin/nft-marketplace). However you absolutly can use this repository without the backend part.
 
 ## Summary
 
@@ -57,7 +57,7 @@ Please install or have installed the following:
 1. Clone this repository
 
 ```
-git clone https://github.com/jrchain/nft-marketplace-front-end
+git clone https://github.com/jrmunchkin/nft-marketplace-front-end
 cd nft-marketplace-front-end
 ```
 
@@ -72,10 +72,10 @@ yarn dev
 
 Set your `MORALIS_API_KEY` in your env file. To get a moralis API key you should create an [Moralis account](https://admin.moralis.io/) and find your key under the Web3 APIs menu.
 
-Also be sure to replace the graph uri in the \_app.js file with your own uri (see [thegraph repository](https://github.com/jrchain/nft-marketplace-graph)).
+Also be sure to replace the graph uri in the \_app.js file with your own uri (see [thegraph repository](https://github.com/jrmunchkin/nft-marketplace-graph)).
 
 ## Testing
 
-The Application can be use locally thanks to hardhat node with the [backend repository](https://github.com/jrchain/nft-marketplace). You need to add the hardhat network in your metamask and export an account.
+The Application can be use locally thanks to hardhat node with the [backend repository](https://github.com/jrmunchkin/nft-marketplace). You need to add the hardhat network in your metamask and export an account.
 
 You also can use goerli network. Be sure to connect with goerli network on your metamask.

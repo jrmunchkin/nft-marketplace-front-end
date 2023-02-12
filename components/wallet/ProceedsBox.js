@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { formatUnits } from "@ethersproject/units";
 import { Button, useNotification } from "web3uikit";
 import { Reload } from "@web3uikit/icons";
-import nftMarketplace from "../../constants/NftMarketplace.json";
+import nftMarketplace from "../../constants/nftMarketplace.json";
 
 export default function ProceedsBox({ nftMarketplaceAddress }) {
   const { isWeb3Enabled, account } = useMoralis();
