@@ -59,7 +59,7 @@ export default function Main() {
                 setCollectionAbi(abiForId[event.id]);
               }}
               options={getCollections()}
-              width="400px"
+              width="320px"
             />
           </div>
         </div>

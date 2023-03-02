@@ -19,7 +19,7 @@ export default function WalletNFTCollection({
   });
 
   return (
-    <div className="grid p-4 gap-4 grid-cols-6">
+    <div className="grid p-4 gap-4 grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
       {isFetching || !nfts ? (
         <div></div>
       ) : (

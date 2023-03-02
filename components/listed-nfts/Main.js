@@ -5,6 +5,7 @@ import { useQuery } from "@apollo/client";
 import { Select } from "web3uikit";
 import { useBetween } from "use-between";
 import { useMarketplace } from "../../hooks/useMarketplace";
+import { truncateStr } from "../../utils/utils";
 import networkMapping from "../../constants/contractAddresses.json";
 import GET_ACTIVE_NFT from "../../subgraph/query-get-active-nft";
 import ListedNFTBox from "./ListedNFTBox";
@@ -90,7 +91,7 @@ export default function Main() {
                   setCollectionAddress(event.id);
                 }}
                 options={getCollections()}
-                width="400px"
+                width="320px"
               />
             )}
           </div>
@@ -102,7 +103,7 @@ export default function Main() {
             <div>
               <h1 className="py-4 px-4 font-bold text-2xl">Recently Listed</h1>
               <div className="flex flex-wrap">
-                <div className="grid p-4 gap-4 grid-cols-6">
+                <div className="grid p-4 gap-4 grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
                   {fetchingListedNfts || !listedNfts ? (
                     <div></div>
                   ) : (
@@ -128,7 +129,9 @@ export default function Main() {
             </div>
           ) : (
             <div>
-              <h1 className="py-4 px-4 font-bold text-2xl">{collectionName}</h1>
+              <h1 className="py-4 px-4 font-bold text-2xl">
+                {truncateStr(collectionName || "", 22)}
+              </h1>
               <div className="flex flex-wrap">
                 <ListedNFTCollection
                   nftMarketplaceAddress={nftMarketplaceAddress}
